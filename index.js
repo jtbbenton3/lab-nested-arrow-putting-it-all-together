@@ -17,7 +17,7 @@ function createLoginTracker(userInfo) {
     }
 
     if(attemptCount < 3) {
-      return `Login attempt ${attemptCount} failed`;
+      return "Attempt " + attemptCount + ": Login failed";
     }
 
     if (attemptCount >= 3) {
