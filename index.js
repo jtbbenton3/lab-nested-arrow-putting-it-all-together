@@ -20,7 +20,7 @@ function createLoginTracker(userInfo) {
       return "Attempt " + attemptCount + ": Login failed";
     }
 
-    if (attemptCount >= 3) {
+    if (attemptCount > 3) {
       isLocked = true;
       return `Account locked due to too many failed login attempts`;
     }
